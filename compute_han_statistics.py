@@ -13,9 +13,7 @@ target = df.filter(items=['origin']).transpose().to_numpy()
 
 # get the columns of interest and the target - FROM COMAND LINE INPUT
 
-#cols_of_interest = df.columns[argv[1]:argv[2]]
-
-cols_of_interest = df.columns[0:25]
+cols_of_interest = df.columns[argv[1]:argv[2]]
 just_the_vars = df.filter(items=cols_of_interest).transpose().to_numpy()
 
 vars_and_target = np.append(just_the_vars, target, axis=0)
