@@ -1,20 +1,34 @@
+#!/bin/bash
+#
+#SBATCH --mail-user=robinett@cs.uchicago.edu
+#SBATCH --mail-type=ALL
+#SBATCH --output=/home/robinett/GitHub/quantum/notebooks/phase2-fs-eval/outputs/%j.stdout
+#SBATCH --error=/home/robinett/GitHub/quantum/notebooks/phase2-fs-eval/outputs/%j.stderr
+#SBATCH --chdir=/home/robinett/GitHub/quantum/notebooks/phase2-fs-eval
+#SBATCH --account=pi-sriesenfeld
+#SBATCH --partition=sriesenfeld
+#SBATCH --job-name=check_hostname_of_node
+#SBATCH --time=0:30:00
+#SBATCH --array 0-79
+#SBATCH --mem=8G
+
 # python compute_han_statistics.py 0 25
-python compute_han_statistics.py 25 50
-python compute_han_statistics.py 50 75
-python compute_han_statistics.py 75 100
-python compute_han_statistics.py 100 125
-python compute_han_statistics.py 125 150
-python compute_han_statistics.py 150 175
-python compute_han_statistics.py 175 200
-python compute_han_statistics.py 200 225
-python compute_han_statistics.py 225 250
-python compute_han_statistics.py 250 275
-python compute_han_statistics.py 275 300
-python compute_han_statistics.py 300 325
-python compute_han_statistics.py 325 350
-python compute_han_statistics.py 350 375
-python compute_han_statistics.py 375 400
-python compute_han_statistics.py 400 425
+# python compute_han_statistics.py 25 50
+# python compute_han_statistics.py 50 75
+# python compute_han_statistics.py 75 100
+# python compute_han_statistics.py 100 125
+# python compute_han_statistics.py 125 150
+# python compute_han_statistics.py 150 175
+# python compute_han_statistics.py 175 200
+# python compute_han_statistics.py 200 225
+# python compute_han_statistics.py 225 250
+# python compute_han_statistics.py 250 275
+# python compute_han_statistics.py 275 300
+# python compute_han_statistics.py 300 325
+# python compute_han_statistics.py 325 350
+# python compute_han_statistics.py 350 375
+# python compute_han_statistics.py 375 400
+# python compute_han_statistics.py 400 425
 python compute_han_statistics.py 425 450
 python compute_han_statistics.py 450 475
 python compute_han_statistics.py 475 500
