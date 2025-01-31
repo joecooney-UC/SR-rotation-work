@@ -1,4 +1,4 @@
-python compute_han_statistics.py 0 25
+# python compute_han_statistics.py 0 25
 python compute_han_statistics.py 25 50
 python compute_han_statistics.py 50 75
 python compute_han_statistics.py 75 100
