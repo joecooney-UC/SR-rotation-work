@@ -13,7 +13,7 @@ target = df.filter(items=['origin']).transpose().to_numpy()
 
 # get the columns of interest and the target - FROM COMAND LINE INPUT
 
-cols_of_interest = df.columns[int(argv[1]):int(argv[2])]
+cols_of_interest = df.columns[int(argv[1]):int(argv[1])+25]
 just_the_vars = df.filter(items=cols_of_interest).transpose().to_numpy()
 
 vars_and_target = np.append(just_the_vars, target, axis=0)
@@ -27,7 +27,7 @@ h3 = third_order_han(just_the_vars)
 h3_cond = third_order_han_cond(vars_and_target)
 
 # write to and make the file
-file = open("pancan_han_stats/pancan_han_stats_" + str(argv[1]) + "_" + str(argv[2]) + ".txt", 'x')
+file = open("pancan_han_stats/pancan_han_stats_" + str(argv[1]) + "_" + str(int(argv[1])+25) + ".txt", 'x')
 
 file.write("Columns Used:\n")
 cols_used = ""
