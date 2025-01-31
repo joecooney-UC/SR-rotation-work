@@ -29,7 +29,7 @@ h3 = third_order_han(just_the_vars)
 h3_cond = third_order_han_cond(vars_and_target)
 
 # write to and make the file
-file = open("pancan_han_stats_0_25.txt", 'x')
+file = open("pancan_han_stats/pancan_han_stats_0_25.txt", 'x')
 
 file.write("Columns Used:\n")
 cols_used = ""
