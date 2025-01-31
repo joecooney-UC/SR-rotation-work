@@ -5,7 +5,7 @@ import numpy as np
 from sys import argv
 
 
-pf = ParquetFile('dna_mrna_path_features_and_label.parquet')
+pf = ParquetFile('/project/sriesenfeld/robinett/pancan/dna_mrna_path_features_and_label.parquet')
 df = pf.to_pandas()
 
 
