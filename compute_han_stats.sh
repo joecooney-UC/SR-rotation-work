@@ -1,10 +1,10 @@
 #!/bin/bash
 #
-#SBATCH --mail-user=robinett@cs.uchicago.edu
-#SBATCH --mail-type=ALL
+#SBATCH --mail-user=joecooney@uchicago.edu
+#SBATCH --mail-type=NONE
 #SBATCH --output=/home/robinett/GitHub/quantum/notebooks/phase2-fs-eval/outputs/%j.stdout
 #SBATCH --error=/home/robinett/GitHub/quantum/notebooks/phase2-fs-eval/outputs/%j.stderr
-#SBATCH --chdir=/home/robinett/GitHub/quantum/notebooks/phase2-fs-eval
+#SBATCH --chdir=/home/joecooney/quantum_project/SR-rotation-work/
 #SBATCH --account=pi-sriesenfeld
 #SBATCH --partition=sriesenfeld
 #SBATCH --job-name=check_hostname_of_node
